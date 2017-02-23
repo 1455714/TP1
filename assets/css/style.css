@@ -1,52 +1,10 @@
 
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 body,
 html {
   height: 100%;
   width: 100%;
-  background-color: #0f1629;
+  background-color: #003510;
 }
 
 .bg {
@@ -59,7 +17,7 @@ html {
 
 .content {
   position: relative;
-  background-color: #0f1629;
+  background-color: #003510;
   min-height: 500px;
   width: 100%;
   font-family: "Arial";
@@ -68,39 +26,22 @@ html {
   font-size: 16px;
   margin: auto;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .content p {
   margin: auto;
   text-align: center;
-  padding: 50px;
-  max-width: 900px;
+  padding: 20px;
+  max-width: 400px;
+    font-size:14px;
+    line-height: normal;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.4;
+    
 }
 
-a,
-a:visited,
-a:active {
-  color: inherit;
-}
 
-a:hover {
-  color: inherit;
-}
-
-.btn {
-  border-radius: 0px;
-  text-transform: uppercase;
-  border: 2px solid white;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 20px 50px;
-}
-
-.btn:hover {
-  background-color: white;
-  color: #0f1629;
-}
 
 /* Parallax base styles
 --------------------------------------------- */
@@ -130,7 +71,7 @@ a:hover {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 100%;
+  height: 150%;
 }
 
 .parallax__layer--base {
@@ -138,39 +79,39 @@ a:hover {
   z-index: -2;
 }
 
-.parallax__layer--rocks {
+.parallax__layer--devant {
   -webkit-transform: translateZ(-1px) scale(2);
           transform: translateZ(-1px) scale(2);
-  background-image: url("../img/mounts_1.png");
-  margin-top: 78%;
+  background-image: url("../img/devant.svg");
+  margin-top: 0%;
   z-index: -3;
 }
 
-.parallax__layer--river {
+.parallax__layer--gazon {
   position: fixed;
   -webkit-transform: translateZ(-2px) scale(3);
           transform: translateZ(-2px) scale(3);
-  background-image: url("../img/mounts_2.png");
-  margin-top: 95%;
+  background-image: url("../img/gazon.svg");
+  margin-top: 0%;
   z-index: -4;
 }
 
-.parallax__layer--back {
-  position: fixed;
-  -webkit-transform: translateZ(-3px) scale(4);
-          transform: translateZ(-3px) scale(4);
-  background-image: url("../img/mounts_3.png");
-  margin-top: 130%;
-  z-index: -5;
+.parallax__layer--papillons {
+      position: fixed;
+    -webkit-transform: translateZ(-2px) scale(3);
+    transform: translateZ(-2px) scale(1.7);
+    background-image: url(../img/papillons.svg);
+    margin-top: -10%;
+    z-index: -5;
 }
 
-.parallax__layer--deep {
-  position: fixed;
-  -webkit-transform: translateZ(-4px) scale(5);
-          transform: translateZ(-4px) scale(5);
-  background-image: url("../img/mounts_4.png");
-  margin-top: 145%;
-  z-index: -6;
+.parallax__layer--licorne {
+        position: fixed;
+    transform: translateZ(-4px) scale(2.7);
+    background-image: url(../img/licorne.svg);
+    margin-top: -10%;
+    z-index: -6;
+    margin-left: -100%;
 }
 
 .parallax__layer--drone-a {
@@ -239,7 +180,7 @@ a:hover {
 body,
 html {
   overflow: hidden;
-  background-color: #0f1629;
+  background-color: #003510;
 }
 
 body {
@@ -269,11 +210,11 @@ body {
 /* style the groups
 --------------------------------------------- */
 
-.rock-cover {
-  margin-top: 30%;
+.devant-cover {
+  margin-top: 68%;
   width: 100%;
   height: 100%;
-  background-color: #0f1629;
+  background-color:#003510;
 }
 
 .scroll-fill {
@@ -285,59 +226,44 @@ body {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 200%;
   letter-spacing: 8px;
   text-transform: uppercase;
+    color:darkseagreen;
+    padding-bottom:30px;
 }
 
-.col-lg-1,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-md-1,
-.col-md-10,
-.col-md-11,
-.col-md-12,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-sm-1,
-.col-sm-10,
-.col-sm-11,
-.col-sm-12,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-xs-1,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9 {
-  padding-left: 0px;
-  padding-right: 0px;
+
+.papillon{
+    position: absolute;
+    left: 10px;
+    /* top: 1200px; */
+    margin-top: -50px;
+    transform: rotate(-30deg);
+    transition:.8s;
+}
+.deuxieme{
+    right:10px;
+    transform:rotate(30deg);
+    left:initial;
+    margin-top:-200px;
+}
+html{
+    height:2000px;
+}
+.licorne path{
+    transition:0.3s;
+    z-index:20;
+}
+.licorne:hover path{
+  d: path("m270.299438,369.255096c-6.143799,-8.400848 -15.690155,-9.359375 -17.99057,-21.316589c-1.800262,-6.50412 -18.771545,-15.227692 -8.728485,-3.552643c7.757477,7.033691 16.974792,32.980164 -2.109985,24.782318c-14.509613,-5.325775 -15.133575,-21.772034 -19.024994,-34.084045c-12.646362,-8.777832 3.271698,-27.334106 -10.345673,-38.580688c-11.562958,-11.73761 -3.514771,-33.722382 -20.029968,-42.04567c-8.290909,-3.364868 -11.880127,19.869522 -13.273605,2.871292c-4.545135,-17.191452 -20.585953,8.356689 -31.286331,5.649017c-8.627518,-0.75177 14.439224,-6.751892 3.432571,-8.366043c-6.476318,3.542374 -12.459702,9.670395 -13.490463,-0.472412c-7.783386,-4.623795 -24.11528,-12.009415 -23.685974,-19.356598c6.759674,-2.124359 29.583221,4.022263 25.635635,-4.518158c-6.789932,-2.576279 -8.022354,-9.617416 0.291321,-4.892761c16.384628,0.514359 35.592712,-6.025208 49.220871,6.484543c7.111328,4.375427 14.102905,20.0672 17.912506,4.816956c12.272888,-14.800079 37.034332,-16.054947 44.597565,-35.21846c1.829376,-9.271469 -5.624817,-14.561111 -11.951508,-16.439682c-1.232544,-3.0466 -3.331787,-15.983047 -8.567963,-9.455688c0.243073,-5.713318 5.15451,-19.376099 -5.725189,-13.327621c-1.105347,-12.170776 9.300018,-24.311798 -4.466736,-33.173569c12.895935,2.393082 10.356567,-12.308083 7.547882,-14.638527c7.637909,-1.086075 16.612335,-7.964645 12.395905,-16.486465c8.302368,15.070015 8.590332,-18.28196 15.424713,-3.906616c12.578735,2.062508 -3.906464,-11.237259 7.664185,-8.268883c6.603149,0.226891 5.131439,-7.237152 11.069946,-1.605087c7.850891,-4.285774 -6.024628,-17.236061 6.658966,-8.237114c4.265289,3.703072 17.833984,13.402451 15.402618,0.604012c12.048248,12.852592 21.530853,-11.941147 31.543793,-17.074543c3.973938,-4.752541 12.612579,-9.780613 4.642456,-0.710613c-5.288544,11.563065 -23.226501,24.07003 -18.397461,35.55838c-4.373383,3.976608 8.813965,8.975639 -1.684662,7.470436c-6.217926,6.710625 8.336121,19.267914 9.497772,29.830009c-3.335236,7.237213 -16.026093,15.452789 -21.161346,15.193375c1.878418,-9.317505 -2.188599,-21.462234 -14.072968,-16.196045c6.659088,12.180145 15.656738,23.815796 21.295959,37.061508c5.508698,13.020386 14.442291,28.055832 26.203522,11.298706c7.492249,-10.67981 28.896454,-10.525726 23.017731,6.818817c-3.006592,17.03363 5.038513,39.512497 -10.424164,51.245575c-9.329285,17.975586 -19.671356,-6.682663 -12.343109,-16.011383c-1.867737,-2.665619 -3.309235,-4.548981 2.154449,-8.192215c-1.123657,-2.732056 15.727539,-13.016785 7.234863,-19.327789c-9.665802,10.956284 -23.798431,23.63678 -19.869324,39.921478c3.185425,10.913162 -23.114777,29.621857 -21.008392,11.511505c0.470459,-7.03891 10.517029,-20.680374 8.201324,-22.437592c-7.331299,13.76564 -17.766357,26.991455 -33.538666,31.079178c-13.120483,0.775894 -19.992371,11.338211 -13.75882,23.057907c1.1875,16.606903 -7.578064,31.636719 -9.594818,47.805725c3.749847,17.14917 26.588165,20.615387 29.69223,38.106964c5.328796,11.748993 -8,10.014038 -14.207611,6.7258l0,0zm-32.481873,-51.161682c-1.922913,-7.751434 -5.878571,20.151245 -1.000854,5.34082l0.728424,-2.615234l0.27243,-2.725586l0,0z");
+    transform:rotate(-20deg);
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
 }
